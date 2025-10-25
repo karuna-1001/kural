@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "build:db": "node scripts/build-db.js",
-    "prestart": "npm run build:db",
     "predev": "npm run build:db"
   },
   "keywords": [],
