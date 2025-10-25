@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "contact": {
       "name": "GitHub Repository",
-      "url": "https://github.com/yourusername/thirukkural-api"
+      "url": "https://github.com/karuna-1001/kural"
     },
     "license": {
       "name": "ISC",
@@ -15,8 +15,8 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000",
-      "description": "Development server"
+      "url": "/",
+      "description": "Base URL"
     }
   ],
   "paths": {
