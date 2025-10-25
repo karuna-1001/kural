@@ -1,0 +1,28 @@
+chapters:
+  1:
+    name: "கடவுள் வாழ்த்து"
+    transliteration: "Kadavul Vaazhthu"
+    translation: "Praise of God"
+    description: "Invocation and praise of the divine"
+    division_number: 1
+    section_number: 1
+    couplet_range: [1, 10]
+
+  2:
+    name: "வான்சிறப்பு"
+    transliteration: "Vaan Sirappu"
+    translation: "The Excellence of Rain"
+    description: "The importance and glory of rain"
+    division_number: 1
+    section_number: 1
+    couplet_range: [11, 20]
+
+  3:
+    name: "நீத்தார் பெருமை"
+    transliteration: "Neethar Perumai"
+    translation: "The Greatness of Ascetics"
+    description: "The greatness of those who have renounced"
+    division_number: 1
+    section_number: 1
+    couplet_range: [21, 30]
+  # ... more chapters

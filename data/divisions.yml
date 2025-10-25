@@ -1,0 +1,27 @@
+divisions:
+  1:
+    name: "அறத்துப்பால்"
+    transliteration: "Araththuppaal"
+    translation: "Book of Virtue"
+    description: "Deals with moral values and virtuous living"
+    section_range: [1, 38]
+    chapter_range: [1, 38]
+    couplet_range: [1, 380]
+    
+  2:
+    name: "பொருட்பால்"
+    transliteration: "Porutpaal"
+    translation: "Book of Wealth"
+    description: "Deals with political and economic values"
+    section_range: [39, 108]
+    chapter_range: [39, 108]
+    couplet_range: [381, 1080]
+    
+  3:
+    name: "இன்பத்துப்பால்"
+    transliteration: "Inbaththuppaal"
+    translation: "Book of Love"
+    description: "Deals with psychological values and love"
+    section_range: [109, 133]
+    chapter_range: [109, 133]
+    couplet_range: [1081, 1330]

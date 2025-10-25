@@ -1,0 +1,28 @@
+sections:
+  1:
+    name: "பாயிரவியல்"
+    transliteration: "Paayiraviyal"
+    translation: "Introduction"
+    description: "Introductory section covering fundamental concepts"
+    division_number: 1
+    chapter_range: [1, 4]
+    couplet_range: [1, 40]
+
+  2:
+    name: "இல்லறவியல்"
+    transliteration: "Illaraviyal"
+    translation: "Domestic Virtue"
+    description: "Section dealing with virtues of household life"
+    division_number: 1
+    chapter_range: [5, 24]
+    couplet_range: [41, 240]
+
+  3:
+    name: "துறவறவியல்"
+    transliteration: "Thuravaraviyal"
+    translation: "Ascetic Virtue"
+    description: "Section dealing with renunciation and ascetic life"
+    division_number: 1
+    chapter_range: [25, 37]
+    couplet_range: [241, 370]
+  # ... more sections

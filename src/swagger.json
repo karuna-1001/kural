@@ -1,0 +1,197 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Thirukkural API",
+    "description": "API for accessing Thirukkural (திருக்குறள்) - ancient Tamil philosophical text of 1330 couplets organized in a hierarchical structure of divisions (பால்), sections (இயல்), and chapters (அதிகாரம்).",
+    "version": "1.0.0",
+    "contact": {
+      "name": "GitHub Repository",
+      "url": "https://github.com/yourusername/thirukkural-api"
+    },
+    "license": {
+      "name": "ISC",
+      "url": "https://opensource.org/licenses/ISC"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    }
+  ],
+  "paths": {
+    "/api/couplets": {
+      "get": {
+        "tags": ["Couplets"],
+        "summary": "Get all couplets",
+        "description": "Returns a paginated list of all couplets with their translations and metadata",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of couplets with pagination metadata",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaginatedResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/couplets/{number}": {
+      "get": {
+        "summary": "Get a specific couplet by number",
+        "description": "Returns detailed information about a specific couplet including translations and hierarchy data",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "path",
+            "required": true,
+            "description": "The number of the couplet (1-1330)",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1330
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single couplet",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Couplet"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Couplet": {
+        "type": "object",
+        "properties": {
+          "couplet": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "integer",
+                "description": "The number of the couplet (1-1330)"
+              },
+              "division_number": {
+                "type": "integer",
+                "description": "Division number"
+              },
+              "section_number": {
+                "type": "integer",
+                "description": "Section number"
+              },
+              "chapter_number": {
+                "type": "integer",
+                "description": "Chapter number"
+              },
+              "tamil": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "The original Tamil couplet lines"
+              },
+              "tamil_explanation": {
+                "type": "string",
+                "description": "Explanation in Tamil"
+              },
+              "translations": {
+                "type": "object",
+                "properties": {
+                  "en": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "description": "English translation"
+                        },
+                        "explanation": {
+                          "type": "string",
+                          "description": "Explanation in English"
+                        },
+                        "author": {
+                          "type": "string"
+                        },
+                        "year": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "PaginatedResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Couplet"
+            }
+          },
+          "pagination": {
+            "type": "object",
+            "properties": {
+              "page": {
+                "type": "integer",
+                "description": "Current page number"
+              },
+              "limit": {
+                "type": "integer",
+                "description": "Items per page"
+              },
+              "totalItems": {
+                "type": "integer",
+                "description": "Total number of items"
+              },
+              "totalPages": {
+                "type": "integer",
+                "description": "Total number of pages"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

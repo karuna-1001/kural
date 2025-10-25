@@ -1,0 +1,42 @@
+couplet:
+  number: 1
+  division_number: 1
+  section_number: 1
+  chapter_number: 1
+  tamil:
+    - "அகர முதல எழுத்தெல்லாம் ஆதி"
+    - "பகவன் முதற்றே உலகு"
+  tamil_explanation: "எழுத்துக்கள் எல்லாம் அகரத்தை முதலாக கொண்டிருப்பது போல, உலகம் கடவுளை முதலாகக் கொண்டிருக்கிறது."
+  translations:
+    en:
+      - text: "As 'A' is the first of all letters, so the Ancient God is first in the world"
+        explanation: "As the letter A is the first of all letters, so God is the prime cause of the entire universe"
+        author: "G.U. Pope"
+        year: 1886
+      - text: "Like 'A' leads letters all, the Ancient Lord leads and lords over all worlds"
+        explanation: "Just as the letter 'A' is the first among all letters, God is the primordial being who is the first cause of the universe"
+        author: "P.S. Sundaram"
+        year: 1990
+    hi:
+      - text: "जैसे 'अ' सभी अक्षरों का पहला है, वैसे ही भगवान विश्व का आदि है"
+        explanation: "जैसे 'अ' सभी वर्णों में प्रथम है, वैसे ही ईश्वर सृष्टि का मूल कारण है"
+        author: "प्रो. ए. चक्रवर्ती"
+        year: 1965
+  tamil_interpretations:
+    - text: "எழுத்துக்கள் அனைத்திலும் அகரம் முதன்மையானது. அதுபோல, உலகிற்கு முதன்மையானவன் இறைவன். அகரம் எப்படி மற்ற எழுத்துக்களுக்கு அடிப்படையாக இருக்கிறதோ, அப்படியே இறைவன் இந்த உலகத்துக்கு அடிப்படையாக இருக்கிறான்."
+      author: "பரிமேலழகர்"
+      year: 1234
+    - text: "அகரம் எல்லா எழுத்துக்களுக்கும் முதலாக இருப்பதுபோல், கடவுள் உலகத்துக்கு முதலாக இருக்கிறார். அகரம் இல்லையெனில் எழுத்துக்கள் இல்லை என்பதுபோல, கடவுள் இல்லையெனில் உலகமும் இல்லை என்பது இதன் பொருள்."
+      author: "முனைவர் மு. வரதராசன்"
+      year: 1965
+  keywords:
+    - "God"
+    - "primordial"
+    - "creation"
+    - "order"
+    - "universe"
+  metadata:
+    last_updated: "2025-10-25"
+    contributors:
+      - name: "Karunakaran Samayan"
+        github: "karuna"

@@ -1,0 +1,42 @@
+couplet:
+  number: 2
+  division_number: 1
+  section_number: 1
+  chapter_number: 1
+  tamil:
+    - "கற்றதனால் ஆய பயனென்கொல் வாலறிவன்"
+    - "நற்றாள் தொழாஅர் எனின்"
+  tamil_explanation: "கடவுளின் திருவடிகளை வணங்காத நிலையில் கற்கப்படும் கல்வியால் பயன் ஏதும் இல்லை."
+  translations:
+    en:
+      - text: "What profit have those derived from learning, who worship not the good feet of Him who is possessed of pure knowledge?"
+        explanation: "What benefit is gained from learning if one does not worship the sacred feet of the Omniscient Being who possesses perfect wisdom?"
+        author: "G.U. Pope"
+        year: 1886
+      - text: "What use is learning if one does not worship at the feet of the All-knowing One?"
+        explanation: "Learning is futile if it does not lead to the worship of the Supreme Being who possesses absolute knowledge."
+        author: "P.S. Sundaram"
+        year: 1990
+    hi:
+      - text: "सर्वज्ञ भगवान के चरणों की वंदना न करने वालों को विद्या से क्या लाभ?"
+        explanation: "यदि कोई सर्वज्ञानी परमात्मा के चरणों की वंदना नहीं करता, तो उसकी विद्या निरर्थक है"
+        author: "प्रो. ए. चक्रवर्ती"
+        year: 1965
+  tamil_interpretations:
+    - text: "எவ்வளவுதான் கற்றிருந்தாலும், அந்தக் கல்வியால் வரும் பயன் என்ன என்றால், முழுமுதற் பரம்பொருளான இறைவனின் திருவடிகளை வணங்காமல் இருந்தால் அக்கல்வி வீணாகும்."
+      author: "பரிமேலழகர்"
+      year: 1234
+    - text: "கல்வி கற்றதனால் வரும் பயன் என்ன? தெளிந்த அறிவுடைய இறைவனின் நல்ல திருவடிகளை வணங்காவிட்டால் அக்கல்வி பயனற்றதாகும்."
+      author: "முனைவர் மு. வரதராசன்"
+      year: 1965
+  keywords:
+    - "worship"
+    - "education"
+    - "knowledge"
+    - "devotion"
+    - "learning"
+  metadata:
+    last_updated: "2025-10-26"
+    contributors:
+      - name: "Karunakaran Samayan"
+        github: "karuna"
