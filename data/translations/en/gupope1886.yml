@@ -1,0 +1,16 @@
+translator:
+  id: "gupope"
+  name: "G.U. Pope"
+  year: 1886
+  language: "en"
+  type: "translation"
+  bio: "George Uglow Pope was an Anglican missionary and Tamil scholar who produced one of the most influential English translations of Thirukkural"
+
+translations:
+  1:
+    text: "As 'A' is the first of all letters, so the Ancient God is first in the world"
+    explanation: "As the letter A is the first of all letters, so God is the prime cause of the entire universe"
+
+  2:
+    text: "What profit have those derived from learning, who worship not the good feet of Him who is possessed of pure knowledge?"
+    explanation: "What benefit is gained from learning if one does not worship the sacred feet of the Omniscient Being who possesses perfect wisdom?"

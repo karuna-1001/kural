@@ -25,4 +25,57 @@ sections:
     division_number: 1
     chapter_range: [25, 37]
     couplet_range: [241, 370]
-  # ... more sections
+
+  4:
+    name: "ஊழியல்"
+    transliteration: "Oozhiyal"
+    translation: "Fate"
+    description: "Section dealing with destiny and fate"
+    division_number: 1
+    chapter_range: [38, 38]
+    couplet_range: [371, 380]
+
+  5:
+    name: "அரசியல்"
+    transliteration: "Arasiyal"
+    translation: "Royalty"
+    description: "Section dealing with kingship and governance"
+    division_number: 2
+    chapter_range: [39, 63]
+    couplet_range: [381, 630]
+
+  6:
+    name: "அங்கவியல்"
+    transliteration: "Angaviyal"
+    translation: "Ministers"
+    description: "Section dealing with ministerial duties and statecraft"
+    division_number: 2
+    chapter_range: [64, 95]
+    couplet_range: [631, 950]
+
+  7:
+    name: "ஒழிபியல்"
+    transliteration: "Ozhipiyal"
+    translation: "Miscellaneous"
+    description: "Section dealing with essential requirements"
+    division_number: 2
+    chapter_range: [96, 108]
+    couplet_range: [951, 1080]
+
+  8:
+    name: "களவியல்"
+    transliteration: "Kalaviyal"
+    translation: "Pre-marital Love"
+    description: "Section dealing with clandestine love"
+    division_number: 3
+    chapter_range: [109, 115]
+    couplet_range: [1081, 1150]
+
+  9:
+    name: "கற்பியல்"
+    transliteration: "Karpiyal"
+    translation: "Wedded Love"
+    description: "Section dealing with marital love and fidelity"
+    division_number: 3
+    chapter_range: [116, 133]
+    couplet_range: [1151, 1330]

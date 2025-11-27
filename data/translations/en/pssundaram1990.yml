@@ -1,0 +1,16 @@
+translator:
+  id: "pssundaram"
+  name: "P.S. Sundaram"
+  year: 1990
+  language: "en"
+  type: "translation"
+  bio: "P.S. Sundaram produced a modern, accessible English translation of Thirukkural"
+
+translations:
+  1:
+    text: "Like 'A' leads letters all, the Ancient Lord leads and lords over all worlds"
+    explanation: "Just as the letter 'A' is the first among all letters, God is the primordial being who is the first cause of the universe"
+
+  2:
+    text: "What use is learning if one does not worship at the feet of the All-knowing One?"
+    explanation: "Learning is futile if it does not lead to the worship of the Supreme Being who possesses absolute knowledge"

@@ -2,7 +2,7 @@
 
 A modern, open-source API for the ancient Tamil literature Thirukkural (திருக்குறள்), consisting of 1330 couplets.
 
-🌐 **Live API**: https://thirukkural-api.onrender.com  
+🌐 **Live API**: https://thirukkural-api.onrender.com
 📚 **Documentation**: https://thirukkural-api.onrender.com/api-docs
 
 ## Project Structure
@@ -27,7 +27,7 @@ data/
 
 2. **Section** (இயல் / Iyal)
    - Groups of related chapters
-   - Total of 133 sections
+   - Total of 9 sections
    - Example: Introduction (பாயிரவியல் / Paayiraviyal)
 
 3. **Chapter** (அதிகாரம் / Adhikaram)
@@ -103,20 +103,20 @@ Rate Limit: 100 requests per hour per IP address.
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/thirukkural-api.git
 cd thirukkural-api
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 The server will start on http://localhost:3000
 
@@ -145,7 +145,7 @@ GET /api/couplets/search
 Search couplets with multiple filter options:
 - `q`: Search term in text/translations
 - `division`: Filter by division number (1-3)
-- `section`: Filter by section number (1-133)
+- `section`: Filter by section number (1-9)
 - `chapter`: Filter by chapter number (1-133)
 - `page`: Page number for pagination
 - `limit`: Results per page (max 100)
@@ -223,21 +223,3 @@ This project is licensed under the ISC License.
 - Traditional commentators (உரையாசிரியர்கள்)
 - Modern translators and scholars
 - Open source community
-
-- GET /api/kural - Get all Kurals
-- GET /api/kural/:number - Get a specific Kural by number
-- GET /api/kural/search?q=:searchTerm - Search Kurals by content
-
-## Development
-
-- Run tests: \`npm test\`
-- Run linter: \`npm run lint\`
-- Start development server with hot reload: \`npm run dev\`
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.

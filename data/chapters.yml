@@ -2,7 +2,7 @@ chapters:
   1:
     name: "கடவுள் வாழ்த்து"
     transliteration: "Kadavul Vaazhthu"
-    translation: "Praise of God"
+    translation: "The Praise of God"
     description: "Invocation and praise of the divine"
     division_number: 1
     section_number: 1
@@ -11,7 +11,7 @@ chapters:
   2:
     name: "வான்சிறப்பு"
     transliteration: "Vaan Sirappu"
-    translation: "The Excellence of Rain"
+    translation: "The Blessing of Rain"
     description: "The importance and glory of rain"
     division_number: 1
     section_number: 1
@@ -25,4 +25,1173 @@ chapters:
     division_number: 1
     section_number: 1
     couplet_range: [21, 30]
-  # ... more chapters
+
+  4:
+    name: "அறன் வலியுறுத்தல்"
+    transliteration: "Aran Valiyuruthal"
+    translation: "Assertion of the Strength of Virtue"
+    description: "Emphasis on the power of righteousness"
+    division_number: 1
+    section_number: 1
+    couplet_range: [31, 40]
+
+  5:
+    name: "இல்வாழ்க்கை"
+    transliteration: "Ilvaazhkkai"
+    translation: "Domestic Life"
+    description: "The virtue of household life"
+    division_number: 1
+    section_number: 2
+    couplet_range: [41, 50]
+
+  6:
+    name: "வாழ்க்கைத் துணைநலம்"
+    transliteration: "Vaazhkkaith Thunainalam"
+    translation: "The Worth of a Wife"
+    description: "The value of a good spouse"
+    division_number: 1
+    section_number: 2
+    couplet_range: [51, 60]
+
+  7:
+    name: "மக்கட்பேறு"
+    transliteration: "Makkatperu"
+    translation: "The Wealth of Children"
+    description: "The blessing of having children"
+    division_number: 1
+    section_number: 2
+    couplet_range: [61, 70]
+
+  8:
+    name: "அன்புடைமை"
+    transliteration: "Anbudaimai"
+    translation: "The Possession of Love"
+    description: "Having affection and love"
+    division_number: 1
+    section_number: 2
+    couplet_range: [71, 80]
+
+  9:
+    name: "விருந்தோம்பல்"
+    transliteration: "Virundhoambal"
+    translation: "Hospitality"
+    description: "The virtue of welcoming guests"
+    division_number: 1
+    section_number: 2
+    couplet_range: [81, 90]
+
+  10:
+    name: "இனியவை கூறல்"
+    transliteration: "Iniyavai Kooral"
+    translation: "The Utterance of Pleasant Words"
+    description: "Speaking pleasant and kind words"
+    division_number: 1
+    section_number: 2
+    couplet_range: [91, 100]
+
+  11:
+    name: "செய்ந்நன்றி அறிதல்"
+    transliteration: "Seynandri Aridhal"
+    translation: "Gratitude"
+    description: "Remembering and acknowledging kindness"
+    division_number: 1
+    section_number: 2
+    couplet_range: [101, 110]
+
+  12:
+    name: "நடுவு நிலைமை"
+    transliteration: "Naduvu Nilaimai"
+    translation: "Impartiality"
+    description: "Being neutral and fair"
+    division_number: 1
+    section_number: 2
+    couplet_range: [111, 120]
+
+  13:
+    name: "அடக்கமுடைமை"
+    transliteration: "Adakkamudaimai"
+    translation: "The Possession of Self-restraint"
+    description: "Having self-control and modesty"
+    division_number: 1
+    section_number: 2
+    couplet_range: [121, 130]
+
+  14:
+    name: "ஒழுக்கமுடைமை"
+    transliteration: "Ozhukkamudaimai"
+    translation: "The Possession of Decorum"
+    description: "Maintaining proper conduct"
+    division_number: 1
+    section_number: 2
+    couplet_range: [131, 140]
+
+  15:
+    name: "பிறனில் விழையாமை"
+    transliteration: "Piranil Vizhaiyaamai"
+    translation: "Not Coveting Another's Wife"
+    description: "Avoiding desire for others' spouses"
+    division_number: 1
+    section_number: 2
+    couplet_range: [141, 150]
+
+  16:
+    name: "பொறையுடைமை"
+    transliteration: "Poraiyudaimai"
+    translation: "The Possession of Patience"
+    description: "Having forbearance and patience"
+    division_number: 1
+    section_number: 2
+    couplet_range: [151, 160]
+
+  17:
+    name: "அழுக்காறாமை"
+    transliteration: "Azhukkaaraamai"
+    translation: "Not Envying"
+    description: "Freedom from jealousy"
+    division_number: 1
+    section_number: 2
+    couplet_range: [161, 170]
+
+  18:
+    name: "வெஃகாமை"
+    transliteration: "Vekaamai"
+    translation: "Not Coveting"
+    description: "Freedom from greed"
+    division_number: 1
+    section_number: 2
+    couplet_range: [171, 180]
+
+  19:
+    name: "புறங்கூறாமை"
+    transliteration: "Purangkooraamai"
+    translation: "Not Backbiting"
+    description: "Avoiding speaking ill of others behind their back"
+    division_number: 1
+    section_number: 2
+    couplet_range: [181, 190]
+
+  20:
+    name: "பயனில சொல்லாமை"
+    transliteration: "Payanila Sollaamai"
+    translation: "Against Vain Speaking"
+    description: "Avoiding useless talk"
+    division_number: 1
+    section_number: 2
+    couplet_range: [191, 200]
+
+  21:
+    name: "தீவினையச்சம்"
+    transliteration: "Theevinaiyachcham"
+    translation: "Dread of Evil Deeds"
+    description: "Fear of doing wrong"
+    division_number: 1
+    section_number: 2
+    couplet_range: [201, 210]
+
+  22:
+    name: "ஒப்புரவறிதல்"
+    transliteration: "Oppuravaridhal"
+    translation: "Duty to Society"
+    description: "Understanding social obligations"
+    division_number: 1
+    section_number: 2
+    couplet_range: [211, 220]
+
+  23:
+    name: "ஈகை"
+    transliteration: "Eegai"
+    translation: "Giving"
+    description: "The virtue of charity"
+    division_number: 1
+    section_number: 2
+    couplet_range: [221, 230]
+
+  24:
+    name: "புகழ்"
+    transliteration: "Pugazh"
+    translation: "Renown"
+    description: "Achieving good reputation"
+    division_number: 1
+    section_number: 2
+    couplet_range: [231, 240]
+
+  25:
+    name: "அருளுடைமை"
+    transliteration: "Aruludaimai"
+    translation: "Compassion"
+    description: "Having mercy and kindness"
+    division_number: 1
+    section_number: 3
+    couplet_range: [241, 250]
+
+  26:
+    name: "புலான்மறுத்தல்"
+    transliteration: "Pulaanmaruthal"
+    translation: "Abstinence from Flesh"
+    description: "Avoiding eating meat"
+    division_number: 1
+    section_number: 3
+    couplet_range: [251, 260]
+
+  27:
+    name: "தவம்"
+    transliteration: "Thavam"
+    translation: "Penance"
+    description: "Practicing austerity"
+    division_number: 1
+    section_number: 3
+    couplet_range: [261, 270]
+
+  28:
+    name: "கூடாவொழுக்கம்"
+    transliteration: "Koodaavozhlukkam"
+    translation: "Imposture"
+    description: "Against hypocrisy"
+    division_number: 1
+    section_number: 3
+    couplet_range: [271, 280]
+
+  29:
+    name: "கள்ளாமை"
+    transliteration: "Kallaamai"
+    translation: "The Absence of Fraud"
+    description: "Being truthful and honest"
+    division_number: 1
+    section_number: 3
+    couplet_range: [281, 290]
+
+  30:
+    name: "வாய்மை"
+    transliteration: "Vaaymai"
+    translation: "Veracity"
+    description: "Speaking truth"
+    division_number: 1
+    section_number: 3
+    couplet_range: [291, 300]
+
+  31:
+    name: "வெகுளாமை"
+    transliteration: "Vekulaamai"
+    translation: "Restraining Anger"
+    description: "Controlling one's temper"
+    division_number: 1
+    section_number: 3
+    couplet_range: [301, 310]
+
+  32:
+    name: "இன்னா செய்யாமை"
+    transliteration: "Innaa Seyyaamai"
+    translation: "Not Doing Evil"
+    description: "Avoiding harmful actions"
+    division_number: 1
+    section_number: 3
+    couplet_range: [311, 320]
+
+  33:
+    name: "கொல்லாமை"
+    transliteration: "Kollaamai"
+    translation: "Not Killing"
+    description: "The virtue of non-violence"
+    division_number: 1
+    section_number: 3
+    couplet_range: [321, 330]
+
+  34:
+    name: "நிலையாமை"
+    transliteration: "Nilaiyaamai"
+    translation: "Instability"
+    description: "The transience of life"
+    division_number: 1
+    section_number: 3
+    couplet_range: [331, 340]
+
+  35:
+    name: "துறவு"
+    transliteration: "Thuravu"
+    translation: "Renunciation"
+    description: "The virtue of giving up worldly attachments"
+    division_number: 1
+    section_number: 3
+    couplet_range: [341, 350]
+
+  36:
+    name: "மெய்யுணர்தல்"
+    transliteration: "Meyyunardhal"
+    translation: "Truth-Consciousness"
+    description: "Realizing the ultimate truth"
+    division_number: 1
+    section_number: 3
+    couplet_range: [351, 360]
+
+  37:
+    name: "அவா அறுத்தல்"
+    transliteration: "Avaa Aruthal"
+    translation: "The Eradication of Desire"
+    description: "Cutting off cravings"
+    division_number: 1
+    section_number: 3
+    couplet_range: [361, 370]
+
+  38:
+    name: "ஊழ்"
+    transliteration: "Oozh"
+    translation: "Fate"
+    description: "The nature of destiny"
+    division_number: 1
+    section_number: 4
+    couplet_range: [371, 380]
+
+  39:
+    name: "இறைமாட்சி"
+    transliteration: "Iraimaatchi"
+    translation: "The Greatness of a King"
+    description: "The majesty and qualities of kingship"
+    division_number: 2
+    section_number: 5
+    couplet_range: [381, 390]
+
+  40:
+    name: "கல்வி"
+    transliteration: "Kalvi"
+    translation: "Learning"
+    description: "The importance of education"
+    division_number: 2
+    section_number: 5
+    couplet_range: [391, 400]
+
+  41:
+    name: "கல்லாமை"
+    transliteration: "Kallaamai"
+    translation: "Illiteracy"
+    description: "The drawbacks of ignorance"
+    division_number: 2
+    section_number: 5
+    couplet_range: [401, 410]
+
+  42:
+    name: "கேள்வி"
+    transliteration: "Kelvi"
+    translation: "Hearing"
+    description: "The value of listening and learning"
+    division_number: 2
+    section_number: 5
+    couplet_range: [411, 420]
+
+  43:
+    name: "அறிவுடைமை"
+    transliteration: "Arivudaimai"
+    translation: "The Possession of Knowledge"
+    description: "Having wisdom and intelligence"
+    division_number: 2
+    section_number: 5
+    couplet_range: [421, 430]
+
+  44:
+    name: "குற்றங்கடிதல்"
+    transliteration: "Kutrangkadithal"
+    translation: "Avoiding Faults"
+    description: "Correcting one's mistakes"
+    division_number: 2
+    section_number: 5
+    couplet_range: [431, 440]
+
+  45:
+    name: "பெரியாரைத் துணைக்கோடல்"
+    transliteration: "Periyaarait Thunaikodal"
+    translation: "Seeking the Aid of Great Men"
+    description: "Associating with the wise"
+    division_number: 2
+    section_number: 5
+    couplet_range: [441, 450]
+
+  46:
+    name: "சிற்றினம் சேராமை"
+    transliteration: "Sitrinam Seraamai"
+    translation: "Avoiding Mean Associations"
+    description: "Not associating with the base"
+    division_number: 2
+    section_number: 5
+    couplet_range: [451, 460]
+
+  47:
+    name: "தெரிந்து செயல்வகை"
+    transliteration: "Therindhu Seyalvakai"
+    translation: "Acting After Due Consideration"
+    description: "Thinking before acting"
+    division_number: 2
+    section_number: 5
+    couplet_range: [461, 470]
+
+  48:
+    name: "வலியறிதல்"
+    transliteration: "Valiyaridhal"
+    translation: "Discerning Power"
+    description: "Understanding one's strength"
+    division_number: 2
+    section_number: 5
+    couplet_range: [471, 480]
+
+  49:
+    name: "காலமறிதல்"
+    transliteration: "Kaalamaridhal"
+    translation: "Discerning the Time"
+    description: "Understanding the right timing"
+    division_number: 2
+    section_number: 5
+    couplet_range: [481, 490]
+
+  50:
+    name: "இடனறிதல்"
+    transliteration: "Idanaridhal"
+    translation: "Discerning the Place"
+    description: "Choosing the right location"
+    division_number: 2
+    section_number: 5
+    couplet_range: [491, 500]
+
+  51:
+    name: "தெரிந்து தெளிதல்"
+    transliteration: "Therindhu Thellithal"
+    translation: "Selection and Confidence"
+    description: "Making informed choices"
+    division_number: 2
+    section_number: 5
+    couplet_range: [501, 510]
+
+  52:
+    name: "தெரிந்து வினையாடல்"
+    transliteration: "Therindhu Vinaiyaadal"
+    translation: "Selection and Employment"
+    description: "Choosing the right people for tasks"
+    division_number: 2
+    section_number: 5
+    couplet_range: [511, 520]
+
+  53:
+    name: "சுற்றந்தழால்"
+    transliteration: "Sutrandhazhaal"
+    translation: "Cherishing Kinship"
+    description: "Valuing family relationships"
+    division_number: 2
+    section_number: 5
+    couplet_range: [521, 530]
+
+  54:
+    name: "பொச்சாவாமை"
+    transliteration: "Pochchaavaamai"
+    translation: "Freedom from Sloth"
+    description: "Avoiding negligence"
+    division_number: 2
+    section_number: 5
+    couplet_range: [531, 540]
+
+  55:
+    name: "செங்கோன்மை"
+    transliteration: "Sengkonmai"
+    translation: "Righteous Rule"
+    description: "Governing with justice"
+    division_number: 2
+    section_number: 5
+    couplet_range: [541, 550]
+
+  56:
+    name: "கொடுங்கோன்மை"
+    transliteration: "Kodungkonmai"
+    translation: "Cruel Tyranny"
+    description: "The evils of oppressive rule"
+    division_number: 2
+    section_number: 5
+    couplet_range: [551, 560]
+
+  57:
+    name: "வெருவந்த செய்யாமை"
+    transliteration: "Veruvandha Seyyaamai"
+    translation: "Not Causing Terror"
+    description: "Avoiding creating fear"
+    division_number: 2
+    section_number: 5
+    couplet_range: [561, 570]
+
+  58:
+    name: "கண்ணோட்டம்"
+    transliteration: "Kannottam"
+    translation: "Benignity"
+    description: "Showing kindness and grace"
+    division_number: 2
+    section_number: 5
+    couplet_range: [571, 580]
+
+  59:
+    name: "ஒற்றாடல்"
+    transliteration: "Otraadal"
+    translation: "Espionage"
+    description: "The use of spies"
+    division_number: 2
+    section_number: 5
+    couplet_range: [581, 590]
+
+  60:
+    name: "ஊக்கமுடைமை"
+    transliteration: "Ookkamudaimai"
+    translation: "Energy"
+    description: "Having vigor and determination"
+    division_number: 2
+    section_number: 5
+    couplet_range: [591, 600]
+
+  61:
+    name: "மடியின்மை"
+    transliteration: "Madiyinmai"
+    translation: "Freedom from Idleness"
+    description: "Being industrious"
+    division_number: 2
+    section_number: 5
+    couplet_range: [601, 610]
+
+  62:
+    name: "ஆள்வினையுடைமை"
+    transliteration: "Aalvinaiyudaimai"
+    translation: "Manly Effort"
+    description: "Taking initiative and responsibility"
+    division_number: 2
+    section_number: 5
+    couplet_range: [611, 620]
+
+  63:
+    name: "இடுக்கண் அழியாமை"
+    transliteration: "Idukkan Azhiyaamai"
+    translation: "Hopefulness in Adversity"
+    description: "Not despairing in difficulties"
+    division_number: 2
+    section_number: 5
+    couplet_range: [621, 630]
+
+  64:
+    name: "அமைச்சு"
+    transliteration: "Amaichu"
+    translation: "The Minister"
+    description: "The qualities of a good minister"
+    division_number: 2
+    section_number: 6
+    couplet_range: [631, 640]
+
+  65:
+    name: "சொல்வன்மை"
+    transliteration: "Solvanmai"
+    translation: "Power of Speech"
+    description: "Eloquence in speaking"
+    division_number: 2
+    section_number: 6
+    couplet_range: [641, 650]
+
+  66:
+    name: "வினைத்தூய்மை"
+    transliteration: "Vinaithhooymai"
+    translation: "Purity in Action"
+    description: "Acting with integrity"
+    division_number: 2
+    section_number: 6
+    couplet_range: [651, 660]
+
+  67:
+    name: "வினைத்திட்பம்"
+    transliteration: "Vinaiththitpam"
+    translation: "Firmness in Action"
+    description: "Being resolute in deeds"
+    division_number: 2
+    section_number: 6
+    couplet_range: [661, 670]
+
+  68:
+    name: "வினைசெயல்வகை"
+    transliteration: "Vinai Seyalvakai"
+    translation: "The Method of Acting"
+    description: "The proper way to execute tasks"
+    division_number: 2
+    section_number: 6
+    couplet_range: [671, 680]
+
+  69:
+    name: "தூது"
+    transliteration: "Thoothu"
+    translation: "The Envoy"
+    description: "The qualities of an ambassador"
+    division_number: 2
+    section_number: 6
+    couplet_range: [681, 690]
+
+  70:
+    name: "மன்னரைச் சேர்ந்து ஒழுகல்"
+    transliteration: "Mannairach Serndhu Ozhukal"
+    translation: "Conduct in the Presence of the King"
+    description: "Proper behavior before royalty"
+    division_number: 2
+    section_number: 6
+    couplet_range: [691, 700]
+
+  71:
+    name: "குறிப்பறிதல்"
+    transliteration: "Kuripparidhal"
+    translation: "Discerning Signs"
+    description: "Understanding subtle indications"
+    division_number: 2
+    section_number: 6
+    couplet_range: [701, 710]
+
+  72:
+    name: "அவையறிதல்"
+    transliteration: "Avaiyaridhal"
+    translation: "Discerning the Council"
+    description: "Understanding assembly dynamics"
+    division_number: 2
+    section_number: 6
+    couplet_range: [711, 720]
+
+  73:
+    name: "அவையஞ்சாமை"
+    transliteration: "Avaiyanchaamai"
+    translation: "Freedom from Fear of the Council"
+    description: "Speaking boldly in assemblies"
+    division_number: 2
+    section_number: 6
+    couplet_range: [721, 730]
+
+  74:
+    name: "நாடு"
+    transliteration: "Naadu"
+    translation: "The Country"
+    description: "The qualities of a good nation"
+    division_number: 2
+    section_number: 6
+    couplet_range: [731, 740]
+
+  75:
+    name: "அரண்"
+    transliteration: "Aran"
+    translation: "The Fortification"
+    description: "The importance of strong defenses"
+    division_number: 2
+    section_number: 6
+    couplet_range: [741, 750]
+
+  76:
+    name: "பொருள் செயல்வகை"
+    transliteration: "Porul Seyalvakai"
+    translation: "The Mode of Amassing Wealth"
+    description: "Proper ways to accumulate resources"
+    division_number: 2
+    section_number: 6
+    couplet_range: [751, 760]
+
+  77:
+    name: "படைமாட்சி"
+    transliteration: "Padaimaatchi"
+    translation: "The Excellence of an Army"
+    description: "The qualities of a strong military"
+    division_number: 2
+    section_number: 6
+    couplet_range: [761, 770]
+
+  78:
+    name: "படைச்செருக்கு"
+    transliteration: "Padaichserukku"
+    translation: "Military Pride"
+    description: "The valor of soldiers"
+    division_number: 2
+    section_number: 6
+    couplet_range: [771, 780]
+
+  79:
+    name: "நட்பு"
+    transliteration: "Natpu"
+    translation: "Friendship"
+    description: "The value of true friendship"
+    division_number: 2
+    section_number: 6
+    couplet_range: [781, 790]
+
+  80:
+    name: "நட்பு ஆராய்தல்"
+    transliteration: "Natpu Aaraaithal"
+    translation: "Investigation into Friendship"
+    description: "Testing the quality of friendship"
+    division_number: 2
+    section_number: 6
+    couplet_range: [791, 800]
+
+  81:
+    name: "பழைமை"
+    transliteration: "Pazhaimai"
+    translation: "Familiarity"
+    description: "The value of old friendships"
+    division_number: 2
+    section_number: 6
+    couplet_range: [801, 810]
+
+  82:
+    name: "தீ நட்பு"
+    transliteration: "Thee Natpu"
+    translation: "Evil Friendship"
+    description: "The dangers of bad company"
+    division_number: 2
+    section_number: 6
+    couplet_range: [811, 820]
+
+  83:
+    name: "கூடா நட்பு"
+    transliteration: "Kooda Natpu"
+    translation: "Spurious Friendship"
+    description: "False friendships"
+    division_number: 2
+    section_number: 6
+    couplet_range: [821, 830]
+
+  84:
+    name: "பேதைமை"
+    transliteration: "Pethaimai"
+    translation: "Folly"
+    description: "The nature of foolishness"
+    division_number: 2
+    section_number: 6
+    couplet_range: [831, 840]
+
+  85:
+    name: "புல்லறிவாண்மை"
+    transliteration: "Pullarivaanmai"
+    translation: "Ignorance"
+    description: "The drawbacks of being uninformed"
+    division_number: 2
+    section_number: 6
+    couplet_range: [841, 850]
+
+  86:
+    name: "இகல்"
+    transliteration: "Ikal"
+    translation: "Hatred"
+    description: "The nature of enmity"
+    division_number: 2
+    section_number: 6
+    couplet_range: [851, 860]
+
+  87:
+    name: "பகை மாட்சி"
+    transliteration: "Pakai Maatchi"
+    translation: "The Might of an Enemy"
+    description: "Understanding enemy strength"
+    division_number: 2
+    section_number: 6
+    couplet_range: [861, 870]
+
+  88:
+    name: "பகைத்திறம் தேருதல்"
+    transliteration: "Pakaiththiram Theruthal"
+    translation: "Discerning the Nature of an Enemy"
+    description: "Analyzing enemy capabilities"
+    division_number: 2
+    section_number: 6
+    couplet_range: [871, 880]
+
+  89:
+    name: "உட்பகை"
+    transliteration: "Utpakai"
+    translation: "Intestine Hatred"
+    description: "Internal enemies"
+    division_number: 2
+    section_number: 6
+    couplet_range: [881, 890]
+
+  90:
+    name: "பெரியாரைப் பிழையாமை"
+    transliteration: "Periyaaraip Pizhayaamai"
+    translation: "Not Offending the Great"
+    description: "Respecting those in power"
+    division_number: 2
+    section_number: 6
+    couplet_range: [891, 900]
+
+  91:
+    name: "பெண்வழிச் சேறல்"
+    transliteration: "Penvazhich Seral"
+    translation: "Acting According to a Woman's Will"
+    description: "The dangers of being controlled by desires"
+    division_number: 2
+    section_number: 6
+    couplet_range: [901, 910]
+
+  92:
+    name: "வரைவின் மகளிர்"
+    transliteration: "Varaivin Makalir"
+    translation: "Prostitutes"
+    description: "Warning against courtesans"
+    division_number: 2
+    section_number: 6
+    couplet_range: [911, 920]
+
+  93:
+    name: "கள்ளுண்ணாமை"
+    transliteration: "Kallunnaamai"
+    translation: "Not Drinking Liquor"
+    description: "Avoiding intoxication"
+    division_number: 2
+    section_number: 6
+    couplet_range: [921, 930]
+
+  94:
+    name: "சூது"
+    transliteration: "Soothu"
+    translation: "Gambling"
+    description: "The evils of gambling"
+    division_number: 2
+    section_number: 6
+    couplet_range: [931, 940]
+
+  95:
+    name: "மருந்து"
+    transliteration: "Marundhu"
+    translation: "Medicine"
+    description: "The importance of health and healing"
+    division_number: 2
+    section_number: 6
+    couplet_range: [941, 950]
+
+  96:
+    name: "குடிமை"
+    transliteration: "Kudimai"
+    translation: "Nobility"
+    description: "The qualities of noble birth"
+    division_number: 2
+    section_number: 7
+    couplet_range: [951, 960]
+
+  97:
+    name: "மானம்"
+    transliteration: "Maanam"
+    translation: "Honor"
+    description: "The value of self-respect"
+    division_number: 2
+    section_number: 7
+    couplet_range: [961, 970]
+
+  98:
+    name: "பெருமை"
+    transliteration: "Perumai"
+    translation: "Greatness"
+    description: "The nature of true greatness"
+    division_number: 2
+    section_number: 7
+    couplet_range: [971, 980]
+
+  99:
+    name: "சான்றாண்மை"
+    transliteration: "Saandraanmai"
+    translation: "Perfection"
+    description: "The qualities of the perfect person"
+    division_number: 2
+    section_number: 7
+    couplet_range: [981, 990]
+
+  100:
+    name: "பண்புடைமை"
+    transliteration: "Panpudaimai"
+    translation: "Courtesy"
+    description: "Having good manners and culture"
+    division_number: 2
+    section_number: 7
+    couplet_range: [991, 1000]
+
+  101:
+    name: "நன்றி யறிதல்"
+    transliteration: "Nandri Yaridhal"
+    translation: "Beneficence"
+    description: "Doing good to others"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1001, 1010]
+
+  102:
+    name: "ஈகை"
+    transliteration: "Eegai"
+    translation: "Giving"
+    description: "The virtue of charity"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1011, 1020]
+
+  103:
+    name: "இரவு"
+    transliteration: "Iravu"
+    translation: "Begging"
+    description: "The nature of seeking help"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1021, 1030]
+
+  104:
+    name: "கயமை"
+    transliteration: "Kayamai"
+    translation: "Meanness"
+    description: "The nature of baseness"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1031, 1040]
+
+  105:
+    name: "நல்குரவு"
+    transliteration: "Nalkuravu"
+    translation: "Poverty"
+    description: "The hardships of being poor"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1041, 1050]
+
+  106:
+    name: "இரவச்சம்"
+    transliteration: "Iravachcham"
+    translation: "Dread of Begging"
+    description: "The shame of asking for help"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1051, 1060]
+
+  107:
+    name: "கயவர்"
+    transliteration: "Kayavar"
+    translation: "The Base"
+    description: "The nature of mean people"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1061, 1070]
+
+  108:
+    name: "அச்சமில்லாமை"
+    transliteration: "Achchamillaamai"
+    translation: "Freedom from Fear"
+    description: "Being fearless"
+    division_number: 2
+    section_number: 7
+    couplet_range: [1071, 1080]
+
+  109:
+    name: "தகையணங்குறுத்தல்"
+    transliteration: "Thakaiyananukuruthal"
+    translation: "The Beauty of the Woman"
+    description: "Praising the beloved's beauty"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1081, 1090]
+
+  110:
+    name: "குறிப்பறிதல்"
+    transliteration: "Kuripparidhal"
+    translation: "Discerning the Signs"
+    description: "Understanding signs of love"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1091, 1100]
+
+  111:
+    name: "புணர்ச்சி மகிழ்தல்"
+    transliteration: "Punarchi Makizhthal"
+    translation: "Rejoicing in Union"
+    description: "The joy of being together"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1101, 1110]
+
+  112:
+    name: "நலம் புனைந்துரைத்தல்"
+    transliteration: "Nalam Punainduraithal"
+    translation: "The Praise of Her Beauty"
+    description: "Extolling the beloved's virtues"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1111, 1120]
+
+  113:
+    name: "காதற் சிறப்புரைத்தல்"
+    transliteration: "Kaathar Sirappuraithal"
+    translation: "The Special Excellence of Love"
+    description: "The uniqueness of love"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1121, 1130]
+
+  114:
+    name: "நாணுத் துறவறிதல்"
+    transliteration: "Naanuth Thuravaridhal"
+    translation: "The Renunciation of Shame"
+    description: "Overcoming shyness in love"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1131, 1140]
+
+  115:
+    name: "அலரறிவுறுத்தல்"
+    transliteration: "Alararivuruthal"
+    translation: "The Knowledge of Rumour"
+    description: "Dealing with gossip about love"
+    division_number: 3
+    section_number: 8
+    couplet_range: [1141, 1150]
+
+  116:
+    name: "பிரிவாற்றாமை"
+    transliteration: "Pirivatramai"
+    translation: "Not Enduring Separation"
+    description: "The pain of being apart"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1151, 1160]
+
+  117:
+    name: "படர்மெலிந் திரங்கல்"
+    transliteration: "Padarmelindh Thirangal"
+    translation: "The Wailing Over Her Sickness"
+    description: "Lamenting due to lovesickness"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1161, 1170]
+
+  118:
+    name: "கண்விழித்து இரங்கல்"
+    transliteration: "Kanvizhiththu Irangal"
+    translation: "Her Wailing While Wide Awake"
+    description: "Sleepless nights of longing"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1171, 1180]
+
+  119:
+    name: "பசப்புறு பரத்தல்"
+    transliteration: "Pasappuru Parathal"
+    translation: "The Spreading of Pallor"
+    description: "Physical effects of separation"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1181, 1190]
+
+  120:
+    name: "தனிப்படர் மிகுதி"
+    transliteration: "Thanippadar Mikuthi"
+    translation: "The Abundance of Solitary Suffering"
+    description: "Intense loneliness in separation"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1191, 1200]
+
+  121:
+    name: "நினைந்தவர் புலம்பல்"
+    transliteration: "Ninaindavar Pulambal"
+    translation: "Her Lamentation Over Her Lover"
+    description: "Remembering the beloved"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1201, 1210]
+
+  122:
+    name: "கனவு நிலையுரைத்தல்"
+    transliteration: "Kanavu Nilaiyuraithal"
+    translation: "Her Discourse on Dreams"
+    description: "Dreams of the beloved"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1211, 1220]
+
+  123:
+    name: "பொழுது கண்டு இரங்கல்"
+    transliteration: "Pozhudhu Kandu Irangal"
+    translation: "Her Wailing at the Sight of Evening"
+    description: "Lamenting at different times of day"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1221, 1230]
+
+  124:
+    name: "உறுப்பு நலனழிதல்"
+    transliteration: "Uruppu Nalanazhithal"
+    translation: "The Loss of Her Limbs' Beauty"
+    description: "Physical deterioration from longing"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1231, 1240]
+
+  125:
+    name: "நறுங்குறி யறிதல்"
+    transliteration: "Narungkuri Yaridhal"
+    translation: "Discerning the Omens"
+    description: "Reading signs of the beloved's return"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1241, 1250]
+
+  126:
+    name: "நெஞ்சொடு கிளத்தல்"
+    transliteration: "Nenjodu Kilathal"
+    translation: "Speaking with Her Heart"
+    description: "Conversing with one's own heart"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1251, 1260]
+
+  127:
+    name: "நிறையழிதல்"
+    transliteration: "Niraiyazhithal"
+    translation: "Loss of Self-Restraint"
+    description: "Losing composure due to love"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1261, 1270]
+
+  128:
+    name: "அவர் வயின் விதும்பல்"
+    transliteration: "Avar Vayyin Vidhumbal"
+    translation: "Yearning for Him"
+    description: "Intense longing for the beloved"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1271, 1280]
+
+  129:
+    name: "குறிப்பறிவுறுத்தல்"
+    transliteration: "Kuripparivuruthal"
+    translation: "Imparting Knowledge of His Will"
+    description: "Understanding the beloved's intentions"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1281, 1290]
+
+  130:
+    name: "புணர்ச்சி விதும்பல்"
+    transliteration: "Punarchi Vidhumbal"
+    translation: "Yearning for Union"
+    description: "Desiring to be reunited"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1291, 1300]
+
+  131:
+    name: "நெஞ்சொடு புலம்பல்"
+    transliteration: "Nenjodu Pulambal"
+    translation: "Her Lamentation with Her Heart"
+    description: "Pouring out grief to one's heart"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1301, 1310]
+
+  132:
+    name: "புல்லி யூழ்தல்"
+    transliteration: "Pulli Yoozthal"
+    translation: "Embracing and Fading Away"
+    description: "The weakening effect of separation"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1311, 1320]
+
+  133:
+    name: "ஊடல் உவகை"
+    transliteration: "Oodal Uvakai"
+    translation: "The Pleasures of Lovers' Quarrels"
+    description: "The sweet discord between lovers"
+    division_number: 3
+    section_number: 9
+    couplet_range: [1321, 1330]

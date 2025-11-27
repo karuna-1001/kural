@@ -15,169 +15,232 @@ if (!util.isRegExp) {
 }
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const COUPLETS_DIR = path.join(DATA_DIR, 'couplets');
+const TRANSLATIONS_DIR = path.join(DATA_DIR, 'translations');
 const DB_PATH = path.join(DATA_DIR, 'thirukkural.db');
 
-// Initialize NeDB with options
-const db = new Datastore({ 
+// Initialize NeDB database
+const coupletsDb = new Datastore({
   filename: DB_PATH,
   autoload: true,
   timestampData: true,
-  // Serialize dates as ISO strings to avoid util.isDate issues
-  serialize: (obj) => {
-    return JSON.stringify(obj, (key, value) => {
-      if (value instanceof Date) {
-        return value.toISOString();
-      }
-      return value;
-    });
-  },
-  // Parse dates back from ISO strings
-  deserialize: (str) => {
-    return JSON.parse(str, (key, value) => {
-      if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.test(value)) {
-        return new Date(value);
-      }
-      return value;
-    });
-  }
+  serialize: (obj) => JSON.stringify(obj, (key, value) =>
+    value instanceof Date ? value.toISOString() : value
+  ),
+  deserialize: (str) => JSON.parse(str, (key, value) =>
+    typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.test(value)
+      ? new Date(value) : value
+  )
 });
 
 // Create indexes for faster queries
-db.ensureIndex({ fieldName: 'number', unique: true });
-db.ensureIndex({ fieldName: 'chapter_number' });
-db.ensureIndex({ fieldName: 'section_number' });
-db.ensureIndex({ fieldName: 'division_number' });
+coupletsDb.ensureIndex({ fieldName: 'number', unique: true });
+coupletsDb.ensureIndex({ fieldName: 'chapter.number' });
+coupletsDb.ensureIndex({ fieldName: 'section.number' });
+coupletsDb.ensureIndex({ fieldName: 'division.number' });
 
 // Load all metadata
 let divisionsData;
 let sectionsData;
 let chaptersData;
+let coupletsData;
+let translationsData = {};
+let translatorsMetadata = [];
 
 async function loadMetadata() {
-  const [divisionsFile, sectionsFile, chaptersFile] = await Promise.all([
+  const [divisionsFile, sectionsFile, chaptersFile, coupletsFile] = await Promise.all([
     fs.readFile(path.join(DATA_DIR, 'divisions.yml'), 'utf8'),
     fs.readFile(path.join(DATA_DIR, 'sections.yml'), 'utf8'),
-    fs.readFile(path.join(DATA_DIR, 'chapters.yml'), 'utf8')
+    fs.readFile(path.join(DATA_DIR, 'chapters.yml'), 'utf8'),
+    fs.readFile(path.join(DATA_DIR, 'couplets.yml'), 'utf8')
   ]);
-  
+
   divisionsData = yaml.load(divisionsFile).divisions;
   sectionsData = yaml.load(sectionsFile).sections;
   chaptersData = yaml.load(chaptersFile).chapters;
+  coupletsData = yaml.load(coupletsFile).couplets;
+
+  console.log('Loaded divisions, sections, chapters, and couplets metadata');
+  console.log(`Total couplets loaded: ${Object.keys(coupletsData).length}`);
 }
 
-async function processCouplet(filePath) {
+async function loadTranslations() {
+  console.log('Loading translations from:', TRANSLATIONS_DIR);
+
   try {
-    console.log(`Processing couplet file: ${filePath}`);
-    const content = await fs.readFile(filePath, 'utf8');
-    let coupletData;
-    
+    await fs.access(TRANSLATIONS_DIR);
+  } catch (err) {
+    console.log('Translations directory not found, skipping translation loading');
+    return;
+  }
+
+  const languages = ['en', 'hi', 'ta'];
+
+  for (const lang of languages) {
+    const langDir = path.join(TRANSLATIONS_DIR, lang);
+
     try {
-      coupletData = yaml.load(content);
-      console.log('YAML parsed successfully');
-    } catch (yamlError) {
-      console.error('YAML parsing error:', yamlError);
-      throw yamlError;
+      const files = await fs.readdir(langDir);
+      const yamlFiles = files.filter(file => file.endsWith('.yml'));
+
+      console.log(`Found ${yamlFiles.length} translation files for ${lang}`);
+
+      for (const file of yamlFiles) {
+        const filePath = path.join(langDir, file);
+        const content = await fs.readFile(filePath, 'utf8');
+        const data = yaml.load(content);
+
+        const translator = data.translator || data.commentator;
+        if (translator) {
+          translatorsMetadata.push({
+            ...translator,
+            language: lang
+          });
+
+          const translations = data.translations || data.interpretations;
+          if (translations) {
+            translationsData[translator.id] = {
+              translator: translator,
+              translations: translations,
+              language: lang
+            };
+
+            console.log(`Loaded ${Object.keys(translations).length} translations from ${translator.name}`);
+          }
+        }
+      }
+    } catch (err) {
+      console.log(`No translations found for ${lang}:`, err.message);
+    }
+  }
+
+  console.log(`Total translators loaded: ${translatorsMetadata.length}`);
+}
+
+async function processCouplet(coupletNumber, coupletLines) {
+  try {
+    console.log(`Processing couplet ${coupletNumber}`);
+
+    // Validate couplet data (should be array of 2 lines)
+    if (!Array.isArray(coupletLines) || coupletLines.length !== 2) {
+      throw new Error(`Invalid couplet data for ${coupletNumber}: Expected array of 2 lines`);
     }
 
-    if (!coupletData || !coupletData.couplet) {
-      throw new Error(`Invalid couplet data in ${filePath}: Missing couplet root object`);
+    // Find which chapter this couplet belongs to by checking couplet_range
+    let chapterNumber, chapterData, sectionNumber, sectionData, divisionNumber, divisionData;
+
+    for (const [chapNum, chapData] of Object.entries(chaptersData)) {
+      const [start, end] = chapData.couplet_range;
+      if (coupletNumber >= start && coupletNumber <= end) {
+        chapterNumber = parseInt(chapNum);
+        chapterData = chapData;
+        sectionNumber = chapData.section_number;
+        divisionNumber = chapData.division_number;
+        sectionData = sectionsData[sectionNumber];
+        divisionData = divisionsData[divisionNumber];
+        break;
+      }
     }
 
-    const couplet = coupletData.couplet;
-    
-    // Convert ISO date strings to Date objects
-    if (couplet.metadata?.last_updated) {
-      couplet.metadata.last_updated = new Date(couplet.metadata.last_updated);
-    }
-    
-    // Validate required fields
-    if (!couplet.number || !couplet.division_number || !couplet.section_number || !couplet.chapter_number) {
-      throw new Error(`Missing required fields in couplet ${filePath}`);
-    }
-    
-    console.log(`Enriching couplet ${couplet.number} with metadata`);
-    
-    // Enrich couplet with division, section and chapter data
-    const division = divisionsData[couplet.division_number];
-    const section = sectionsData[couplet.section_number];
-    const chapter = chaptersData[couplet.chapter_number];
-
-    if (!division || !section || !chapter) {
-      throw new Error(`Invalid division, section or chapter number in couplet ${couplet.number}`);
+    if (!chapterData || !sectionData || !divisionData) {
+      throw new Error(`Could not find chapter/section/division for couplet ${coupletNumber}`);
     }
 
-    console.log('Creating enriched couplet object');
+    // Build translations object
+    const translations = {};
+    const tamilInterpretations = [];
+
+    for (const [translatorId, translatorData] of Object.entries(translationsData)) {
+      const coupletTranslation = translatorData.translations[coupletNumber];
+
+      if (coupletTranslation) {
+        const lang = translatorData.language;
+
+        if (lang === 'ta') {
+          tamilInterpretations.push({
+            text: coupletTranslation.text,
+            author: translatorData.translator.name,
+            year: translatorData.translator.year
+          });
+        } else {
+          if (!translations[lang]) {
+            translations[lang] = [];
+          }
+
+          translations[lang].push({
+            text: coupletTranslation.text,
+            explanation: coupletTranslation.explanation || '',
+            author: translatorData.translator.name,
+            year: translatorData.translator.year
+          });
+        }
+      }
+    }
+
     const enrichedCouplet = {
-      ...couplet,
+      number: parseInt(coupletNumber),
+      tamil: coupletLines,
       division: {
-        number: couplet.division_number,
-        ...division
+        number: divisionNumber,
+        ...divisionData
       },
       section: {
-        number: couplet.section_number,
-        ...section
+        number: sectionNumber,
+        ...sectionData
       },
       chapter: {
-        number: couplet.chapter_number,
-        ...chapter
+        number: chapterNumber,
+        ...chapterData
+      },
+      translations: translations,
+      tamil_interpretations: tamilInterpretations,
+      metadata: {
+        last_updated: new Date().toISOString(),
+        source: 'build-db.js'
       }
     };
 
-    // Remove the redundant fields
-    delete enrichedCouplet.division_number;
-    delete enrichedCouplet.section_number;
-    delete enrichedCouplet.chapter_number;
-    
-    console.log('Storing couplet in database:', enrichedCouplet.number);
-    
-    // Insert as new document instead of update
     return new Promise((resolve, reject) => {
-      db.insert(enrichedCouplet, (err, newDoc) => {
+      coupletsDb.insert(enrichedCouplet, (err, newDoc) => {
         if (err) {
           console.error('Database insert error:', err);
           reject(err);
         } else {
-          console.log('Successfully stored couplet:', newDoc.number);
           resolve(newDoc);
         }
       });
     });
   } catch (err) {
-    console.error(`Error processing ${filePath}:`, err);
+    console.error(`Error processing couplet ${coupletNumber}:`, err);
     throw err;
   }
 }
 
 async function buildDatabase() {
   try {
-    // Load metadata first
     await loadMetadata();
-    console.log('Loaded sections and chapters metadata');
+    await loadTranslations();
 
-    // Clear the database
+    console.log('Loaded all metadata and translations');
+
     await new Promise((resolve, reject) => {
-      db.remove({}, { multi: true }, (err) => {
+      coupletsDb.remove({}, { multi: true }, (err) => {
         if (err) reject(err);
         else resolve();
       });
     });
 
-    // Read all YAML files from the couplets directory
-    const files = await fs.readdir(COUPLETS_DIR);
-    const coupletFiles = files.filter(file => file.endsWith('.yml'));
+    console.log('Building database from couplets...');
 
-    console.log(`Found ${coupletFiles.length} couplet files`);
-
-    // Process each file
-    for (const file of coupletFiles) {
-      await processCouplet(path.join(COUPLETS_DIR, file));
+    const coupletNumbers = Object.keys(coupletsData);
+    for (const coupletNumber of coupletNumbers) {
+      await processCouplet(coupletNumber, coupletsData[coupletNumber]);
     }
 
     console.log('Database built successfully!');
+    console.log(`Total couplets: ${coupletNumbers.length}`);
+    console.log(`Total translators: ${translatorsMetadata.length}`);
 
-    // Compact the database
-    db.persistence.compactDatafile();
+    coupletsDb.persistence.compactDatafile();
 
   } catch (err) {
     console.error('Error building database:', err);

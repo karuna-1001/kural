@@ -1,0 +1,17 @@
+translator:
+  id: "chakravarti"
+  name: "प्रो. ए. चक्रवर्ती"
+  name_transliteration: "Prof. A. Chakravarti"
+  year: 1965
+  language: "hi"
+  type: "translation"
+  bio: "Professor A. Chakravarti translated Thirukkural into Hindi"
+
+translations:
+  1:
+    text: "जैसे 'अ' सभी अक्षरों का पहला है, वैसे ही भगवान विश्व का आदि है"
+    explanation: "जैसे 'अ' सभी वर्णों में प्रथम है, वैसे ही ईश्वर सृष्टि का मूल कारण है"
+
+  2:
+    text: "सर्वज्ञ भगवान के चरणों की वंदना न करने वालों को विद्या से क्या लाभ?"
+    explanation: "यदि कोई सर्वज्ञानी परमात्मा के चरणों की वंदना नहीं करता, तो उसकी विद्या निरर्थक है"
