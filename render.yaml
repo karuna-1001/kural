@@ -8,8 +8,8 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 8080
-    healthCheckPath: /
+        value: 10000
+    healthCheckPath: /api/couplets
     github:
       branch: main
       deploy_on_push: true
